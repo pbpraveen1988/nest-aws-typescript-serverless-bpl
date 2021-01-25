@@ -11,7 +11,7 @@ export class DataController {
   async getList(requestContext: RequestContext) {
     this.logger.log('list of records for object');
     this.logger.log(requestContext);
-    return [{ name: 'John Doe', address: 'USA' }, { name: 'John Doe', address: 'USA' }, { name: 'John Doe', address: 'USA' }]
+    return this.dataService.getList();
   }
 
   @Get('read')

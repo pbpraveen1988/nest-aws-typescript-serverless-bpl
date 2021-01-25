@@ -4,7 +4,8 @@ import { Utils } from '../utils';
 
 @Injectable()
 export class DataService {
-    async getList(object: string, query: QueryParams): Promise<any> {
+    // /object: string, query: QueryParams
+    async getList(): Promise<any> {
         return Utils.newResolvedPromise([
             {name:'John Doe', address: 'USA'},
             {name:'John Doe', address: 'USA'},
